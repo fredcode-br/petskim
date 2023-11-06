@@ -1,0 +1,159 @@
+main {
+    width: 100%;
+    max-width: 1440px;
+}
+
+#banner {
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    padding: 0 2rem;
+    position: relative;
+}
+
+.img-dog {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.img-cat {
+    height: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.banner-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.banner-text h3 {
+    color: var(--color-gray);
+    text-align: center;
+    font-family: var(--font-default);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-text h1 {
+    color: var(--color-primary);
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.backgound-banner {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#services, #best-sellers {
+    padding: 2rem 0;
+}
+
+#services h3, #best-sellers h3 {
+    color: var(--color-gray);
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.service a {
+    text-decoration: none;
+
+}
+.service p {
+   color: var(--color-primary);
+   text-align: center;
+   font-family: var(--font-primary);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+}
+
+.service-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: #ADBFFF;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#about {
+    position: relative;
+}
+
+#about > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.backgound-about {
+    width: 100%;
+    height: 100%;
+}
+
+.about-image {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h3 {
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.about-text p {
+   width: 60%;
+}
+
+.btn {
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 20px;
+}
+
+.btn-yellow {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
