@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetsKim</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/ico/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/servicos.css">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/ico/logo.svg" alt="logo">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="./index.html">Início</a></li>
+                    <li class="nav-link"><a href="./produtos.html">Produtos</a></li>
+                    <li class="nav-link"><a href="./servicos.html">Serviços</a></li>
+                    <li class="nav-link"><a href="./sobre-nos.html">Sobre Nós</a></li>
+                </ul>
+                <div class="search">
+                    <img src="./assets/ico/search.svg" alt="botao de pesquisa">
+                    <input type="search" name="search" id="search">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="services">
+            <div class="container">
+                <h3>Agendar Serviço</h3>
+                <form id="serviceForm">
+                    <label for="selectedService">Selecione o Serviço:</label>
+                    <select id="selectedService" name="selectedService">
+                        <option selected>--- Selecione um serviço ---</option>
+                    </select>
+                    <div class="form-flex">
+                        <label for="serviceName">Nome do Serviço:</label>
+                        <p id="serviceName" name="serviceName"></p>
+                    </div>
+                    <div class="form-flex">
+                        <label for="servicePrice">Preço:</label>
+                        <p id="servicePrice" name="servicePrice"></p>
+                    </div>
+                    <div class="form-flex">
+                        <label for="selectedDate">Data:</label>
+                        <input type="date" id="selectedDate" name="selectedDate" required>
+                    </div>
+
+                    <div class="form-flex">
+                        <label for="selectedTime">Hora:</label>
+                        <input type="time" id="selectedTime" name="selectedTime" required>
+                    </div>
+                
+                    <button type="submit" disabled>Agendar</button>
+                </form>
+                
+            </div>
+        </section>
+
+        </div>
+        </section>
+    </main>
+    <section id="pre-footer">
+        <div class="container">
+            <div class="pre-footer-list">
+                <h3>Contato</h3>
+                <ul class="list">
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                </ul>
+            </div>
+            <div class="pre-footer-list">
+                <h3>Contato</h3>
+                <ul class="list">
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                </ul>
+            </div>
+            <div class="pre-footer-list">
+                <h3>Contato</h3>
+                <ul class="list">
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                </ul>
+            </div>
+            <div class="pre-footer-list">
+                <h3>Contato</h3>
+                <ul class="list">
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                    <li><p>(11) 11111-1111</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="backgound-footer">
+            <img src="./assets/img/background-footer.png" alt="footer background">
+        </div>
+    </section>
+   <footer id="main-footer">
+       <div class="container">
+
+       </div>
+   </footer>
+   <script src="./assets/js/services.js"></script>
+</body>
+</html>

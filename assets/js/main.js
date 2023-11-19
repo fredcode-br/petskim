@@ -1,49 +1,24 @@
 const productsList = document.querySelector('.products-list');
 const servicesList = document.querySelector('.services-list');
+let services, products;
 
-const services = [
-    {
-        name: "Banho",
-        urlImg: "./assets/img/bath.png"
-    },
-    {
-        name: "Tosa",
-        urlImg: "./assets/img/bath.png"
-    },
-    {
-        name: "Adestramento",
-        urlImg: "./assets/img/bath.png"
-    },
-    {
-        name: "Estética",
-        urlImg: "./assets/img/bath.png"
-    }
-]
+const getData = async () => {
+  try {
+    const response = await fetch('../../db.json');
+    const data = await response.json();
+    services = data.services;
+    products = data.products;
+  } catch (error) {
+    console.error('Erro ao ler o arquivo:', error);
+  }
+};
 
-const products = [
-    {
-        title: "Produto A",
-        price: 15,
-        urlImg: "./assets/img/product.png"
-    },
-    {
-        title: "Produto B",
-        price: 25,
-        urlImg: "./assets/img/product.png"
-    },
-    {
-        title: "Produto C",
-        price: 35,
-        urlImg: "./assets/img/product.png"
-    },
-    {
-        title: "Produto D",
-        price: 45,
-        urlImg: "./assets/img/product.png"
-    }
-]
-
-
+const start = async () => {
+    await getData();
+    services.map((s) => createService(s.name,  s.urlImg));
+    products.slice(0, 4).map((p) => createProductHome(p.title, p.price, p.urlImg));
+}
+ 
 const createService = (name, urlImg) => {
     const service = document.createElement('li');
     service.classList.add('service');
@@ -53,12 +28,12 @@ const createService = (name, urlImg) => {
                 <img src="${urlImg}" alt="banho">
             </div>
             <p>${name}</p>
-        </a>
+        </a> 
     `
     servicesList.appendChild(service);
 }
 
-const createProduct = (title, price, urlImg) => {
+const createProductHome = (title, price, urlImg) => {
     const product = document.createElement('li');
     product.classList.add('product');
     product.innerHTML = `
@@ -72,5 +47,5 @@ const createProduct = (title, price, urlImg) => {
     productsList.appendChild(product);
 }
 
-services.map((s) => createService(s.name,  s.urlImg));
-products.map((p) => createProduct(p.title, p.price, p.urlImg));
+
+start()

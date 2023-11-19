@@ -1,0 +1,90 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Banho",
+            "urlImg": "./assets/img/bath.png",
+            "preco": 20.0
+        },
+        {
+            "id": 2,
+            "name": "Tosa",
+            "urlImg": "./assets/img/bath.png",
+            "preco": 30.0
+        },
+        {
+            "id": 3,
+            "name": "Adestramento",
+            "urlImg": "./assets/img/bath.png",
+            "preco": 50.0
+        },
+        {
+            "id": 4,
+            "name": "Estética",
+            "urlImg": "./assets/img/bath.png",
+            "preco": 40.0
+        }
+    ],    
+    "products": [
+        {
+            "id": 1,
+            "title": "Produto A",
+            "price": 15,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 2,
+            "title": "Produto B",
+            "price": 25,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 3,
+            "title": "Produto C",
+            "price": 35,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 4,
+            "title": "Produto D",
+            "price": 45,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 5,
+            "title": "Produto E",
+            "price": 55,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 6,
+            "title": "Produto F",
+            "price": 65,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 7,
+            "title": "Produto G",
+            "price": 75,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 8,
+            "title": "Produto H",
+            "price": 85,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 9,
+            "title": "Produto I",
+            "price": 95,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        },
+        {
+            "id": 10,
+            "title": "Produto J",
+            "price": 105,
+            "urlImg": "https://source.unsplash.com/200x150/?product"
+        }
+    ]
+}
